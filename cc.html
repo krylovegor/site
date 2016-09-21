@@ -1,28 +1,68 @@
 <html>
+<style>
+h1 {
+    color: white;
+    text-align: center;
+    background-color: red
+}
+td.menu 
+{
+    background-color: red;
+}
+td.menu1 
+{
+    background-color: blue;
+}
+td.menu:hover 
+{
+    background-color: pink;
+}
+td.menu1:hover 
+{
+    background-color: pink;
+}
+
+</style>
 <script type="text/javascript">
 function show_pic(){
 //alert('hi');
 var c1_elem = document.getElementById("c1");
 var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
 c1_elem.style.display='none';
-c2_elem.style.display='block';
+c2_elem.style.display = 'block';
+c3_elem.style.display = 'none';
 }
 function show_text(){
 var c1_elem = document.getElementById("c1");
 var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
 c1_elem.style.display='block';
-c2_elem.style.display='none';
+c2_elem.style.display = 'none';
+c3_elem.style.display = 'none';
+}
+function show_game() {
+    //alert('hi');
+    var c1_elem = document.getElementById("c1");
+    var c2_elem = document.getElementById("c2");
+    var c3_elem = document.getElementById("c3");
+    c1_elem.style.display = 'none';
+    c2_elem.style.display = 'none';
+    c3_elem.style.display = 'block';
 }
 </script>
 <body>
-<table border="2" style="color: red">
+<h1>Polska</h1>
+<table width="100%"; border="5">
 <tr>
-<td width="50%" onclick="show_text()"> Описание </td>
-<td width="50%" onclick="show_pic()"> Карта </td>
+<td class="menu" width="33%" onclick="show_text()"> Описание </td>
+<td class="menu1"width="33%" onclick="show_pic()"> Карта </td>
+<td class="menu" width="33%" onclick="show_game()">game</td>
 </tr>
 <tr>
-<td colspan="2" width="50%"> <div id="c1" style="display:none"> y Morzem Baltyckim na polnocy </div> 
+<td colspan="3" width="100%"> <div id="c1" style="display:none"> y Morzem Baltyckim na polnocy </div> 
 <div id="c2" style="display:none"> <img src="pic.jpg"></div>
+<div id="c3" style="display:none">Разработчику лень писать игру. Зайди позже</div>
 </td>
 </tr>
 </table>
