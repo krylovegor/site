@@ -1,27 +1,23 @@
 <html>
 <style>
+table, th, td {
+   border: 0px solid black;
+}
 h1 {
     color: white;
     text-align: center;
     background-color: red
 }
+
 td.menu 
 {
     background-color: red;
-}
-td.menu1 
-{
-    background-color: blue;
+	text-align: center;
 }
 td.menu:hover 
 {
-    background-color: pink;
+    background-color: blue;
 }
-td.menu1:hover 
-{
-    background-color: pink;
-}
-
 </style>
 <script type="text/javascript">
 function show_pic(){
@@ -29,42 +25,69 @@ function show_pic(){
 var c1_elem = document.getElementById("c1");
 var c2_elem = document.getElementById("c2");
 var c3_elem = document.getElementById("c3");
+var c4_elem = document.getElementById("c4");
 c1_elem.style.display='none';
 c2_elem.style.display = 'block';
 c3_elem.style.display = 'none';
+c4_elem.style.display = 'none';
 }
 function show_text(){
 var c1_elem = document.getElementById("c1");
 var c2_elem = document.getElementById("c2");
 var c3_elem = document.getElementById("c3");
+var c4_elem = document.getElementById("c4");
 c1_elem.style.display='block';
 c2_elem.style.display = 'none';
 c3_elem.style.display = 'none';
+c4_elem.style.display = 'none';
 }
 function show_game() {
-    //alert('hi');
     var c1_elem = document.getElementById("c1");
     var c2_elem = document.getElementById("c2");
     var c3_elem = document.getElementById("c3");
-    c1_elem.style.display = 'none';
+    var c4_elem = document.getElementById("c4");
+	c1_elem.style.display = 'none';
     c2_elem.style.display = 'none';
     c3_elem.style.display = 'block';
+	c4_elem.style.display = 'none';
+}
+function show_gal(){
+//alert('hi');
+var c1_elem = document.getElementById("c1");
+var c2_elem = document.getElementById("c2");
+var c3_elem = document.getElementById("c3");
+var c4_elem = document.getElementById("c4");
+c1_elem.style.display='none';
+c2_elem.style.display = 'none';
+c3_elem.style.display = 'none';
+c4_elem.style.display = 'block';
 }
 </script>
 <body>
-<h1>Polska</h1>
-<table width="100%"; border="5">
+<h1>Poland</h1>
+<table width="100%"; border="8">
 <tr>
-<td class="menu" width="33%" onclick="show_text()"> Описание </td>
-<td class="menu1"width="33%" onclick="show_pic()"> Карта </td>
-<td class="menu" width="33%" onclick="show_game()">game</td>
+<td class="menu" width="24%" onclick="show_text()"> Краткаое описание</td>
+<td class="menu"width="24%" onclick="show_pic()"> Карта </td>
+<td class="menu" width="24%" onclick="show_game()">Викторина</td>
+<td class="menu" width="24%" onclick="show_gal()">Галерея</td>
 </tr>
 <tr>
-<td colspan="3" width="100%"> <div id="c1" style="display:none"> y Morzem Baltyckim na polnocy </div> 
-<div id="c2" style="display:none"> <script type="text/javascript" 
-charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tOBl5gtE1WMUf8JvGj8FieW1GXMY3SZe&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
-</script></div></div>
-<div id="c3" style="display:none">Разработчику лень писать игру. Зайди позже</div>
+<td colspan="4" width="100%"> <div id="c1" style="display:none">
+Польша занимает территорию 312 679 км, по этому показателю страна находится на 69-м месте в мире и десятом месте в Европе. Численность населения — 38 млн человек (33-я в мире). Страна разделена на 16 воеводств, которые в свою очередь делятся на повяты (уезды) и гмины (волости).
+Датой создания первого польского государства считается 966 год, когда Мешко I принял христианство. Польша стала королевством в 1025 году, а в 1569 году объединилась с Великим княжеством Литовским (I Речь Посполитая). В 1795 году в результате трёх разделов, когда территория была разделена между Пруссией, Австрией и Россией, Польское государство перестало существовать. Во время наполеоновских войн в период 1807—1813 гг. существовало Герцогство Варшавское, бо?льшая часть которого в 1815 году вошла в состав России в качестве так называемого Царства Польского. Польша вновь обрела независимость в 1918 году после Первой мировой войны (II Речь Посполитая), но в 1939 году была разделена между Германией и СССР. После войны Польша в новых границах (без Западной Белоруссии и Западной Украины, но с значительными территориальными приобретениями за счёт Германии) стала «страной народной демократии», зависимой от СССР (Польская Народная Республика). В 1989 году произошли изменения в политической системе, переход к рыночной экономике (III Речь Посполитая).
+С 12 марта 1999 года является членом НАТО, с 1 мая 2004 года — член Европейского союза. 21 декабря 2007 года вошла в Шенгенскую зону.
+</div> 
+<div id="c2" style="display:none"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tOBl5gtE1WMUf8JvGj8FieW1GXMY3SZe&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
+</script>
+</div>
+<div id="c3" style="display:none">
+Разработчику лень писать игру. Зайди позже
+</div>
+<div id="c4" style="display:none"> 
+<img width="50%" src="pic1.jpg">
+<img width="50%" src="pic.jpg">
+</div>
 </td>
 </tr>
 </table>
