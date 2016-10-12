@@ -1,0 +1,35 @@
+body{background: url(2.jpg);
+background-size: 200%;}
+table, th, td {
+   border: 0px solid black;
+}
+td.start {
+    color: white;
+    text-align: center;
+    background-color: red;
+	font-size:40;
+}
+td.start:hover {
+    color: blue;
+}
+
+td.menu 
+{
+    background-color: red;
+	text-align: center;
+}
+td.menu:hover 
+{
+    background-color: blue;
+}
+td.menu1
+{text-align: center; font-size: 25;
+color: black;
+background-color: red;
+}
+div.m
+{text-align: left; font-size: 40}
+p.style
+{font-size: 30}
+p.style1
+{font-size: 20}

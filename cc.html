@@ -1,136 +1,14 @@
 <html>
-<style>
-body{background: url(2.jpg);
-background-size: 200%;}
-table, th, td {
-   border: 0px solid black;
-}
-td.start {
-    color: white;
-    text-align: center;
-    background-color: red;
-	font-size:40;
-}
-td.start:hover {
-    color: blue;
-}
-
-td.menu 
-{
-    background-color: red;
-	text-align: center;
-}
-td.menu:hover 
-{
-    background-color: blue;
-}
-td.menu1
-{text-align: center; font-size: 25;
-color: black;
-background-color: red;
-}
-div.m
-{text-align: left; font-size: 40}
-p.style
-{font-size: 30}
-p.style1
-{font-size: 20}
-</style>
-<script type="text/javascript">
-function show_start(){
-//alert('hi');
-var c0_elem = document.getElementById("c0");
-var c1_elem = document.getElementById("c1");
-var c2_elem = document.getElementById("c2");
-var c3_elem = document.getElementById("c3");
-var c4_elem = document.getElementById("c4");
-c0_elem.style.display = 'block';
-c1_elem.style.display='none';
-c2_elem.style.display = 'none';
-c3_elem.style.display = 'none';
-c4_elem.style.display = 'none';
-}
-function show_pic(){
-//alert('hi');
-var c0_elem = document.getElementById("c0");
-var c1_elem = document.getElementById("c1");
-var c2_elem = document.getElementById("c2");
-var c3_elem = document.getElementById("c3");
-var c4_elem = document.getElementById("c4");
-c0_elem.style.display='none';
-c1_elem.style.display='none';
-c2_elem.style.display = 'block';
-c3_elem.style.display = 'none';
-c4_elem.style.display = 'none';
-}
-function show_text(){
-var c0_elem = document.getElementById("c0");
-var c1_elem = document.getElementById("c1");
-var c2_elem = document.getElementById("c2");
-var c3_elem = document.getElementById("c3");
-var c4_elem = document.getElementById("c4");
-c0_elem.style.display='none';
-c1_elem.style.display='block';
-c2_elem.style.display = 'none';
-c3_elem.style.display = 'none';
-c4_elem.style.display = 'none';
-}	
-function show_game() {
-    var c0_elem = document.getElementById("c0");
-	var c1_elem = document.getElementById("c1");
-    var c2_elem = document.getElementById("c2");
-    var c3_elem = document.getElementById("c3");
-    var c4_elem = document.getElementById("c4");
-	c0_elem.style.display='none';
-	c1_elem.style.display = 'none';
-    c2_elem.style.display = 'none';
-    c3_elem.style.display = 'block';
-	c4_elem.style.display = 'none';
-}
-function show_gal(){
-//alert('hi');
-var c0_elem = document.getElementById("c0");
-var c1_elem = document.getElementById("c1");
-var c2_elem = document.getElementById("c2");
-var c3_elem = document.getElementById("c3");
-var c4_elem = document.getElementById("c4");
-c0_elem.style.display='none';
-c1_elem.style.display='none';
-c2_elem.style.display = 'none';
-c3_elem.style.display = 'none';
-c4_elem.style.display = 'block';
-}
-</script>
-<script type="text/javascript">
-function check(){
-    q10elem = document.getElementById("q10");
-   q11elem = document.getElementById("q11");
-	q12elem = document.getElementById("q12");
-	q13elem = document.getElementById("q13");
-    if (q10elem.checked) 
-	{ if (q11elem.checked)
-	{if (q12elem.checked)
-	{if (q13elem.checked)
-	     {alert("no") } 
-		  else {alert("yes")}
-	   }
-	   else {alert("no")}
-	}
-	else {alert("no")}
-	}
-	else{alert("no")}
-	var inp = document.getElementsByName('вопрос2');
-    for (var i = 0; i < inp.length; i++) {
-        if (inp[i].type == "radio" && inp[i].checked) {
-            alert("selected: " + inp[i].value);
-        }
-    }
-	q4elem = document.getElementById("q4")
-    answer = q4elem.value;
-    alert("Точно"+answer+"?");
-
-    }
-	</script>
+<head>
+<link href="style.css" rel="stylesheet">
+<script src="script1.js"></script>
+<script src="script2.js"></script>
+<script src="script3.js"></script>
+<script src="script4.js"></script>
+<script src="script5.js"></script>
+<script src="script6.js"></script>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LTnYQXpfb9DGYF7MZlnqYcmXSaYX-4wE&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
+</head>
 <body>
 <table width="100%"; border="8">
 <tr>
@@ -152,8 +30,7 @@ function check(){
 Датой создания первого польского государства считается 966 год, когда Мешко I принял христианство. Польша стала королевством в 1025 году, а в 1569 году объединилась с Великим княжеством Литовским (I Речь Посполитая). В 1795 году в результате трёх разделов, когда территория была разделена между Пруссией, Австрией и Россией, Польское государство перестало существовать. Во время наполеоновских войн в период 1807—1813 гг. существовало Герцогство Варшавское, бо?льшая часть которого в 1815 году вошла в состав России в качестве так называемого Царства Польского. Польша вновь обрела независимость в 1918 году после Первой мировой войны (II Речь Посполитая), но в 1939 году была разделена между Германией и СССР. После войны Польша в новых границах (без Западной Белоруссии и Западной Украины, но с значительными территориальными приобретениями за счёт Германии) стала «страной народной демократии», зависимой от СССР (Польская Народная Республика). В 1989 году произошли изменения в политической системе, переход к рыночной экономике (III Речь Посполитая).
 С 12 марта 1999 года является членом НАТО, с 1 мая 2004 года — член Европейского союза. 21 декабря 2007 года вошла в Шенгенскую зону.
 </div> 
-<div id="c2" style="display:none"><script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=tOBl5gtE1WMUf8JvGj8FieW1GXMY3SZe&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true">
-</script>
+<div id="c2" style="display:none"><div id="mymap"></div>
 </div>
 <div id="c3" class="m" style="display:none">
 <p class="style">Какой-то текст</p>
@@ -183,4 +60,3 @@ function check(){
 
 
 
-;
