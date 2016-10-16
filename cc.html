@@ -1,16 +1,12 @@
-<html>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
 <link href="style.css" rel="stylesheet">
 <script src="script1.js"></script>
-<script src="script2.js"></script>
-<script src="script3.js"></script>
-<script src="script4.js"></script>
-<script src="script5.js"></script>
-<script src="script6.js"></script>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=LTnYQXpfb9DGYF7MZlnqYcmXSaYX-4wE&amp;width=600&amp;height=500&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=mymap"></script>
 </head>
 <body>
-<table width="100%"; border="8">
+	<table width="100%"; border="8">
 <tr>
 <td class="start"colspan="4" width="100%" onclick="show_start()"> Poland </td>
 </tr>
@@ -30,20 +26,25 @@
 Датой создания первого польского государства считается 966 год, когда Мешко I принял христианство. Польша стала королевством в 1025 году, а в 1569 году объединилась с Великим княжеством Литовским (I Речь Посполитая). В 1795 году в результате трёх разделов, когда территория была разделена между Пруссией, Австрией и Россией, Польское государство перестало существовать. Во время наполеоновских войн в период 1807—1813 гг. существовало Герцогство Варшавское, бо?льшая часть которого в 1815 году вошла в состав России в качестве так называемого Царства Польского. Польша вновь обрела независимость в 1918 году после Первой мировой войны (II Речь Посполитая), но в 1939 году была разделена между Германией и СССР. После войны Польша в новых границах (без Западной Белоруссии и Западной Украины, но с значительными территориальными приобретениями за счёт Германии) стала «страной народной демократии», зависимой от СССР (Польская Народная Республика). В 1989 году произошли изменения в политической системе, переход к рыночной экономике (III Речь Посполитая).
 С 12 марта 1999 года является членом НАТО, с 1 мая 2004 года — член Европейского союза. 21 декабря 2007 года вошла в Шенгенскую зону.
 </div> 
-<div id="c2" style="display:none"><div id="mymap"></div>
+<div id="c2" style="display:none">
+<div id="map" style="width: 600px; height: 400px"></div>
 </div>
 <div id="c3" class="m" style="display:none">
-<p class="style">Какой-то текст</p>
-<p class="style1"><input id="q10" type="checkbox"><label for="q10">  Какой-то текст </label></p>
-<p class="style1"><input id="q11" type="checkbox"><label for="q11">  Какой-то текст </label></p>
-<p class="style1"><input id="q12" type="checkbox"><label for="q12">  Какой-то текст </label></p>
-<p class="style1"><input id="q13" type="checkbox"><label for="q13">  Какой-то текст </label></p>
-<p class="style">Какой-то текст</p>
-<p class="style1"><input type="radio" name="вопрос2" value=1> 1</p> 
-<p class="style1"><input type="radio" name="вопрос2" value=2> 2</p>
-<p class="style1"><input type="radio" name="вопрос2" value=3> 3</p>
-<p class="style">Cколько?</p>
-<p><input type="text" / id="q4"> </p>
+<p class="style">Введите Ваше имя </p>
+<p class="style"><input type="text" / id="q4"></p>
+<p class="style">Какие из перечисленных городов находятся в Польше</p>
+<p class="style1"><input id="q10" type="checkbox"><label for="q10">  Краков </label></p>
+<p class="style1"><input id="q11" type="checkbox"><label for="q11">  Варшава </label></p>
+<p class="style1"><input id="q12" type="checkbox"><label for="q12">  Белосток </label></p>
+<p class="style1"><input id="q13" type="checkbox"><label for="q13">  Брно </label></p>
+<p class="style">На сколько воеводств разделена Польша?</p>
+<p class="style1"><input type="radio" name="вопрос2" value=1> 16</p> 
+<p class="style1"><input type="radio" name="вопрос2" value=2> 21</p>
+<p class="style1"><input type="radio" name="вопрос2" value=3> 18</p>
+<p class="style">Какое место по площади в Европе занимает Польша?</p>
+<p class="style1"><input type="radio" name="вопрос3" value=1> 36</p> 
+<p class="style1"><input type="radio" name="вопрос3" value=2> 69</p>
+<p class="style1"><input type="radio" name="вопрос3" value=3> 10</p>
 <p text-align: right><input type="button" value="check" onclick="check()"> </p> 
 </div>
 <div id="c4" style="display:none"> 
@@ -56,6 +57,7 @@
 </tr>
 </table>
 </body>
+
 </html>
 
 
