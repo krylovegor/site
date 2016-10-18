@@ -7,10 +7,13 @@ td.start {
     color: white;
     text-align: center;
     background-color: red;
-	font-size:40;
+	font-size: 250%;
 }
 td.start:hover {
     color: blue;
+	text-align: center;
+    background-color: red;
+	font-size:250%;
 }
 
 td.menu 
@@ -23,13 +26,13 @@ td.menu:hover
     background-color: blue;
 }
 td.menu1
-{text-align: center; font-size: 25;
+{text-align: center; font-size: 150%;
 color: black;
 background-color: red;
 }
 div.m
-{text-align: left; font-size: 40}
+{text-align: left; font-size: 100%}
 p.style
-{font-size: 30}
+{font-size: 100%}
 p.style1
-{font-size: 20}
+{font-size: 100%}

@@ -10,24 +10,24 @@
 	{ if (q11elem.checked)
 	{if (q12elem.checked)
 	{if (q13elem.checked)
-	     {alert("Первый вопрос: Неверно") } 
-		  else {alert("Первый вопрос: Верно")}
+	     {alert("Первый вопрос: Неверно");} 
+		  else {alert("Первый вопрос: Верно");}
 	   }
-	   else {alert("Первый вопрос: Неверно")}
+	   else {alert("Первый вопрос: Неверно");}
 	}
-	else {alert("Первый вопрос: Неверно")}
+	else {alert("Первый вопрос: Неверно");}
 	}
-	else{alert("Первый вопрос: Неверно")}
+	else{alert("Первый вопрос: Неверно");}
 	var inp = document.getElementsByName('вопрос2');
         if (inp[0].type == "radio" && inp[0].checked) {
             alert("Второй вопрос: Верно" );
         } 
-		else {alert("Второй вопрос: Неверно")}
+		else {alert("Второй вопрос: Неверно")};
 		var inp = document.getElementsByName('вопрос3');
-        if (inp[2].type == "radio" && inp[2].checked) {
+        if (inp[2].type == "radio" && inp[2].checked){
             alert("Третий вопрос: Верно" );
         } 
-		else {alert("Третий вопрос: Неверно")}
+		else {alert("Третий вопрос: Неверно");}
     }
 function show_start(){
 //alert('hi');
@@ -99,15 +99,10 @@ ymaps.ready(function(){
     }),
     myGeoObject = new ymaps.GeoObject({
         geometry: {
-            type: "Point",// тип геометрии - точка
-            coordinates: [52.19, 20.85] // координаты точки
+            type: "Point",
+            coordinates: [52.19, 20.85]
        }
     });
 	myMap.geoObjects.add(myGeoObject);
-	var coords = new YMaps.GeoPoint(52.19,20.85),
-placemark = new YMaps.Placemark(coords);
-placemark.name = "Имя метки"; // Заголовок балуна
-placemark.description = "Описание метки"; // Текст балуна
-map.addOverlay(placemark);
 
     });
