@@ -94,15 +94,30 @@ c4_elem.style.display = 'block';
 }
 ymaps.ready(function(){
 		var myMap = new ymaps.Map("map", {
-        center: [52.19, 20.85],
+        center: [52.129029, 19.393702],
         zoom: 6
-    }),
-    myGeoObject = new ymaps.GeoObject({
-        geometry: {
-            type: "Point",
-            coordinates: [52.19, 20.85]
-       }
-    });
-	myMap.geoObjects.add(myGeoObject);
-
-    });
+    })
+var myPlacemark = new ymaps.Placemark(
+			
+				[50.06045, 19.932412] , {
+                    
+                    hintContent: 'Краков'
+                });     
+ 
+ 
+			myMap.geoObjects.add(myPlacemark);
+			var myPlacemark1 = new ymaps.Placemark(
+				[51.108249, 17.026901] , {
+                    hintContent: 'Вроцлав'
+                });     
+ 
+			myMap.geoObjects.add(myPlacemark1);
+			var myPlacemark2 = new ymaps.Placemark(
+				[52.235576, 21.010265] , {
+                    
+                    hintContent: 'Варшава'
+                });     
+ 
+			myMap.geoObjects.add(myPlacemark2);
+	});
+	
