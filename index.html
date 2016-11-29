@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 <head>
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
 <link href="style.css" rel="stylesheet">
 <script src="script1.js"></script>
+<script src="test.js"></script>
 </head>
 <body>
 	<table width="100%"; border="8">
@@ -31,22 +32,26 @@
 <div id="map" style="width: 600px; height: 400px"></div>
 </div>
 <div id="c3" class="m" style="display:none">
-<p class="style">Введите Ваше имя. </p>
-<p class="style"><input type="text" / id="q4"></p>
-<p class="style">Какие из перечисленных городов находятся в Польше?</p>
-<p class="style1"><input id="q10" type="checkbox"><label for="q10">  Краков </label></p>
-<p class="style1"><input id="q11" type="checkbox"><label for="q11">  Варшава </label></p>
-<p class="style1"><input id="q12" type="checkbox"><label for="q12">  Белосток </label></p>
-<p class="style1"><input id="q13" type="checkbox"><label for="q13">  Брно </label></p>
-<p class="style">На сколько воеводств разделена Польша?</p>
-<p class="style1"><input type="radio" name="вопрос2" value=1> 16</p> 
-<p class="style1"><input type="radio" name="вопрос2" value=2> 21</p>
-<p class="style1"><input type="radio" name="вопрос2" value=3> 18</p>
-<p class="style">Какое место по площади в Европе занимает Польша?</p>
-<p class="style1"><input type="radio" name="вопрос3" value=1> 36</p> 
-<p class="style1"><input type="radio" name="вопрос3" value=2> 69</p>
-<p class="style1"><input type="radio" name="вопрос3" value=3> 10</p>
-<p text-align: right><input type="button" value="check" onclick="check()"> </p> 
+<form name="test"><ol>
+<li><INPUT type="text" size="1" value="" name="T1"/><b> Какой из следующих городов находится в Польше</b><br/>
+<input type="radio" value="0" name="Q1"/> Варшава<br />
+<input type="radio" value="1" name="Q1"/> Берлин<br />
+<input type="radio" value="2" name="Q1"/> Москва<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> На сколько воеводств разделена Польша?</b><br/>
+<input type="radio" value="0" name="Q2"/> 16<br />
+<input type="radio" value="1" name="Q2"/> 21<br />
+<input type="radio" value="2" name="Q2"/> 18<br />
+<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Какое место по площади в Европе занимает Польша?</b><br/>
+<input type="radio" value="0" name="Q3"/> 69<br />
+<input type="radio" value="1" name="Q3"/> 36<br />
+<input type="radio" value="2" name="Q3"/> 10<br />
+<br/></li></ol>      
+<CENTER>
+<P><TEXTAREA name="s1" rows="4" cols="70" readonly> </TEXTAREA> </P>
+<INPUT onclick="check_me()" type="button" value="Показать результат"/>&nbsp;&nbsp;&nbsp;&nbsp; 
+<INPUT type="reset" value="Сбросить ответы"/> 
+</CENTER>        
+</form>      
 </div>
 <div id="c4" style="display:none"> 
 <img width="50%" src="pic1.jpg">
