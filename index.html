@@ -1,10 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
+<title> Poland</title>
+ <link rel="shortcut icon" href="favicon.png" type="image/png">
 <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"> </script>
 <link href="style.css" rel="stylesheet">
 <script src="script1.js"></script>
 <script src="test.js"></script>
+<script type="text/javascript" src="highslide-with-gallery.js"></script>
+<link rel="stylesheet" type="text/css" href="highslide.css" />
 </head>
 <body>
 	<table width="100%"; border="8">
@@ -12,7 +16,7 @@
 <td class="start" colspan="4" width="100%" onclick="show_start()"> Poland </td>
 </tr>
 <tr>
-<td class="menu" width="24%" onclick="show_text()"> Краткаое описание</td>
+<td class="menu" width="24%" onclick="show_text()"> Краткое описание</td>
 <td class="menu"width="24%" onclick="show_pic()"> Карта </td>
 <td class="menu" width="24%" onclick="show_game()">Викторина</td>
 <td class="menu" width="24%" onclick="show_gal()">Галерея</td>
@@ -21,27 +25,29 @@
 <td></td>
 <td class="menu1" colspan="2" width="100%"> 
 <div id="c0"> <h2>Добро пожаловать на сайт!</h2>
-<p class="style1">Тут вы сможете найти краткую информцию о Польше (в разделе "Краткое описание", посмотреть фотографии (в разделе "Галерея") и карту (в разделе "Карта"), а также проверить свои знания в разделе "Викторина". </p> </div>
+<p class="style1">Тут вы сможете найти краткую информацию о Польше (в разделе "Краткое описание", посмотреть фотографии (в разделе "Галерея") и карту (в разделе "Карта"), а также проверить свои знания в разделе "Викторина". </p>
+<br class="style1"> Обратная связь: <a href="http://vk.com/id45270054"> ВКонтакте </a></div>
 <div id="c1" style="display:none">
 <h2>Общая информация</h2>
-Польша занимает территорию 312 679 км, по этому показателю страна находится на 69-м месте в мире и десятом месте в Европе. Численность населения — 38 млн человек (33-я в мире). Страна разделена на 16 воеводств, которые в свою очередь делятся на повяты (уезды) и гмины (волости).
+<br class="info">Польша занимает территорию 312 679 км, по этому показателю страна находится на 69-м месте в мире и десятом месте в Европе. Численность населения — 38 млн человек (33-я в мире). Страна разделена на 16 воеводств, которые в свою очередь делятся на повяты (уезды) и гмины (волости).
 Датой создания первого польского государства считается 966 год, когда Мешко I принял христианство. Польша стала королевством в 1025 году, а в 1569 году объединилась с Великим княжеством Литовским (I Речь Посполитая). В 1795 году в результате трёх разделов, когда территория была разделена между Пруссией, Австрией и Россией, Польское государство перестало существовать. Во время наполеоновских войн в период 1807—1813 гг. существовало Герцогство Варшавское, бо?льшая часть которого в 1815 году вошла в состав России в качестве так называемого Царства Польского. Польша вновь обрела независимость в 1918 году после Первой мировой войны (II Речь Посполитая), но в 1939 году была разделена между Германией и СССР. После войны Польша в новых границах (без Западной Белоруссии и Западной Украины, но с значительными территориальными приобретениями за счёт Германии) стала «страной народной демократии», зависимой от СССР (Польская Народная Республика). В 1989 году произошли изменения в политической системе, переход к рыночной экономике (III Речь Посполитая).
 С 12 марта 1999 года является членом НАТО, с 1 мая 2004 года — член Европейского союза. 21 декабря 2007 года вошла в Шенгенскую зону.
+</br>
 </div> 
 <div id="c2" style="display:none">
-<div id="map" style="width: 600px; height: 400px"></div>
+<div id="map" style="width: 650px; height: 400px"></div>
 </div>
 <div id="c3" class="m" style="display:none">
 <form name="test"><ol>
-<li><INPUT type="text" size="1" value="" name="T1"/><b> Какой из следующих городов находится в Польше</b><br/>
-<input type="radio" value="0" name="Q1"/> Варшава<br />
+<li><INPUT readonly type="text" size="1" value="" name="T1"/><b> Какой из следующих городов находится в Польше</b><br/>
+<input type="radio" value="0" name="Q1"/> Варшава<br/>
 <input type="radio" value="1" name="Q1"/> Берлин<br />
 <input type="radio" value="2" name="Q1"/> Москва<br />
-<br/></li><li><INPUT type="text" size="1" value="" name="T2"/><b> На сколько воеводств разделена Польша?</b><br/>
+<br/></li><li><INPUT readonly type="text" size="1" value="" name="T2"/><b> На сколько воеводств разделена Польша?</b><br/>
 <input type="radio" value="0" name="Q2"/> 16<br />
 <input type="radio" value="1" name="Q2"/> 21<br />
 <input type="radio" value="2" name="Q2"/> 18<br />
-<br/></li><li><INPUT type="text" size="1" value="" name="T3"/><b> Какое место по площади в Европе занимает Польша?</b><br/>
+<br/></li><li><INPUT readonly type="text" size="1" value="" name="T3"/><b> Какое место по площади в Европе занимает Польша?</b><br/>
 <input type="radio" value="0" name="Q3"/> 69<br />
 <input type="radio" value="1" name="Q3"/> 36<br />
 <input type="radio" value="2" name="Q3"/> 10<br />
@@ -54,9 +60,35 @@
 </form>      
 </div>
 <div id="c4" style="display:none"> 
-<img width="50%" src="pic1.jpg">
-<img width="50%" src="81.jpg">
-<img width="50%" src="3.jpg">
+<h2> Для просмотра фотографии в увеличенном виде кликните по ней </h2>
+<div class="highslide-gallery">
+
+<a href="pic1.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="pic1.min.jpg" alt="Highslide JS"
+		title="Click to enlarge" />
+</a>
+
+
+<div class="highslide-caption">
+	Warszawa
+</div>
+
+
+
+<a href="81.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="81.min.jpg" alt="Highslide JS"
+		title="Click to enlarge" /></a>
+
+<div class="highslide-caption">
+	Gdansk
+</div>
+
+<a href="3.jpg" class="highslide" onclick="return hs.expand(this)">
+	<img src="3.min.jpg" alt="Highslide JS"
+		title="Click to enlarge" /></a>
+
+<div class="highslide-caption">
+	Warszawa
 </div>
 </td>
 </tr>

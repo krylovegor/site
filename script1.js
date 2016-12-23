@@ -1,35 +1,4 @@
-﻿function check(){
-	q4elem = document.getElementById("q4")
-    answer = q4elem.value;
-    alert("Имя: "+answer);
-    q10elem = document.getElementById("q10");
-   q11elem = document.getElementById("q11");
-	q12elem = document.getElementById("q12");
-	q13elem = document.getElementById("q13");
-    if (q10elem.checked) 
-	{ if (q11elem.checked)
-	{if (q12elem.checked)
-	{if (q13elem.checked)
-	     {alert("Первый вопрос: Неверно");} 
-		  else {alert("Первый вопрос: Верно");}
-	   }
-	   else {alert("Первый вопрос: Неверно");}
-	}
-	else {alert("Первый вопрос: Неверно");}
-	}
-	else{alert("Первый вопрос: Неверно");}
-	var inp = document.getElementsByName('вопрос2');
-        if (inp[0].type == "radio" && inp[0].checked) {
-            alert("Второй вопрос: Верно" );
-        } 
-		else {alert("Второй вопрос: Неверно")};
-		var inp = document.getElementsByName('вопрос3');
-        if (inp[2].type == "radio" && inp[2].checked){
-            alert("Третий вопрос: Верно" );
-        } 
-		else {alert("Третий вопрос: Неверно");}
-    }
-function show_start(){
+﻿function show_start(){
 //alert('hi');
 var c0_elem = document.getElementById("c0");
 var c1_elem = document.getElementById("c1");
@@ -121,3 +90,24 @@ var myPlacemark = new ymaps.Placemark(
 			myMap.geoObjects.add(myPlacemark2);
 	});
 	
+	hs.graphicsDir = '../highslide/graphics/';
+hs.align = 'center';
+hs.transitions = ['expand', 'crossfade'];
+hs.outlineType = 'glossy-dark';
+hs.wrapperClassName = 'dark';
+hs.fadeInOut = true;
+//hs.dimmingOpacity = 0.75;
+
+// Add the controlbar
+if (hs.addSlideshow) hs.addSlideshow({
+	//slideshowGroup: 'group1',
+	interval: 5000,
+	repeat: false,
+	useControls: true,
+	fixedControls: 'fit',
+	overlayOptions: {
+		opacity: .6,
+		position: 'bottom center',
+		hideOnMouseOut: true
+	}
+});

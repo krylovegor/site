@@ -6,34 +6,37 @@ table, th, td {
 td.start {
     color: white;
     text-align: center;
-    background-color: red;
+    background-color: rgb(39,117,180);
 	font-size: 250%;
+	font-family: "Arial Black"; cursor: pointer;
 }
 td.start:hover {
-    color: blue;
+    color: rgb(162,157,131);
 	text-align: center;
-    background-color: red;
-	font-size:250%;
+    background-color: rgb(39,117,180);
+	font-size:250%; cursor:pointer;
 }
 
 td.menu 
 {
-    background-color: red;
+    background-color: rgb(39,117,180);
 	text-align: center;
+	font-family: "Arial Black"; cursor:pointer;
 }
 td.menu:hover 
 {
-    background-color: blue;
+    background-color: rgb(162,157,131); cursor:pointer;
 }
 td.menu1
 {text-align: center; font-size: 150%;
 height: 600px;
 color: black;
-background-color: red;
-}
+background-color: rgb(39,117,180);}
 div.m
 {text-align: left; font-size: 100%}
-p.style
-{font-size: 100%}
-p.style1
-{font-size: 100%}
+h2{font-family: "Arial Black";
+}
+br.info{text-align: left}
+
+  
+
