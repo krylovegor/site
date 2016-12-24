@@ -1,8 +1,7 @@
 body{background: url(2.jpg) no-repeat;
-background-size: cover;}
+background-size: auto;}
 table, th, td {
-   border: 0px solid black;
-}
+   border: 0px solid black;}
 td.start {
     color: white;
     text-align: center;
@@ -27,16 +26,16 @@ td.menu:hover
 {
     background-color: rgb(162,157,131); cursor:pointer;
 }
+p,br.menu2{text-align: center;}
 td.menu1
-{text-align: center; font-size: 150%;
-height: 600px;
+{font-size: 150%;
 color: black;
 background-color: rgb(39,117,180);}
 div.m
 {text-align: left; font-size: 100%}
 h2{font-family: "Arial Black";
-}
-br.info{text-align: left}
+text-align: center;}
+div.map{position: absolute;width: 50%; height: 50%}
 
   
 
